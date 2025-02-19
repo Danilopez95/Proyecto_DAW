@@ -1,0 +1,329 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dddddd;
+}
+
+/* HEADER GENERAL */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dddddd;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-family: "ANDREAS REGULAR";
+    font-weight: bold;
+}
+
+header h1 a{
+    text-decoration: none;
+    color:black;
+}
+
+.login {
+    padding: 10px;
+    background: rgb(163, 163, 163);
+    border-radius: 5px;
+}
+    
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: rgb(127, 204, 34);
+}
+
+.login a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* INDEX - UNETE A LA REVOLUCIÓN */
+.unete {
+    text-align: center;
+    padding: 200px 50px;
+    background: url('Imagenes/Imagen_04.png');
+    background-size: cover;
+    background-position: center;
+    color: rgb(127, 204, 34);
+}
+
+.eventos h2{
+    font-family: "ANDREAS REGULAR";
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.unete h2 {
+    font-size: 2.5em;
+    font-family: "ANDREAS REGULAR"
+    
+}
+
+.unete p {
+    font-size: 1.2em;
+    color: black;
+}
+
+.evento {
+    display: inline-block;
+    background: black;
+    color: #1e1e1e;
+    padding: 60px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.evento:hover {
+    background: rgb(127, 204, 34);
+}
+
+/* EVENTOS */
+.eventos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cajas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.evento {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+}
+
+.evento img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER GENERAL */
+footer {
+    background: #dddddd;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* SECCIÓN DE EVENTOS */
+
+.eventos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.evento a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.eventos h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color:rgb(127, 204, 34);
+}
+
+/* Diseño cuadricula */
+.calendario-eventos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*Eventos */
+.evento_cal {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+    
+}
+
+.evento_cal a{
+    text-decoration: none;
+}
+
+.evento_cal:hover {
+    transform: translateY(-5px);
+    background: rgb(127, 204, 34);
+    
+}
+
+.evento_cal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.evento_cal h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #2d6a4f;
+}
+
+/* SECCIÓN DE DETALLES DE EVENTOS */
+.detalle-eventos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.detalle-eventos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Diseño de cada evento */
+.evento-detalle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Imagen a la izquierda */
+.evento-detalle img {
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+/* Texto a la derecha */
+.texto {
+    text-align: left;
+    max-width: 100%;
+}
+
+.texto h3 {
+    
+    font-size: 1.5em;
+    color: rgb(127, 204, 34);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+/* CAJA DEL LOGIN */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* TITULO */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: rgb(127, 204, 34);
+}
+
+/* FORMULARIO */
+.login-box label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* BOTÓN DE ACCESO */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(127, 204, 34);
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: (0.3s);
+}
+
+.login-box button:hover {
+    background: #1e4a36;
+}
+
+/* LINK DE REGISTRO */
+.register-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #2d6a4f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+ 
+
