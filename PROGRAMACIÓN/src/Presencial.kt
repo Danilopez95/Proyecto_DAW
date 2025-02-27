@@ -16,7 +16,7 @@ class Presencial:Evento {
 
     }
 
-    override fun inscribirUsuario(usuario: Usuario) {
+ /*   override fun inscribirUsuario(usuario: Usuario) {
         super.inscribirUsuario(usuario)
     }
 
@@ -30,6 +30,6 @@ class Presencial:Evento {
 
     override fun listaInscritos() {
         super.listaInscritos()
-    }
+    }*/
 
 }

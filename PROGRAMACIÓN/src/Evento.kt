@@ -37,7 +37,7 @@ open class Evento {
     }
 
 
-    open fun confirmarAsistencia(usuario: Usuario){
+    /*open fun confirmarAsistencia(usuario: Usuario){
         if(usuario in usuarioInscrito){
             usuarioAsistentes.add(usuario)
         }else{
@@ -67,5 +67,5 @@ open class Evento {
             println("Usuario: ${usuarioInscrito[i]}")
         }
 
-    }
+    }*/
 }

@@ -16,6 +16,15 @@ class Usuario {
     }
 
     constructor(
+        Nombre: String
+    ){
+        this.Nombre=Nombre
+        Id_Usuario= contador
+        contador++
+
+    }
+
+    constructor(
         Nombre: String,
         Correo: String,
         Contrasenia: String
@@ -28,15 +37,19 @@ class Usuario {
         contador ++
     }
 
-    fun historialEventos(evento: Evento){
-        eventosAsistidos.add(evento)
+    fun historialEventos(){
+       if (eventosAsistidos.isNotEmpty()){
+           for (i in eventosAsistidos.indices){
+               println("Evento: ${eventosAsistidos[i]}")
+           }
+       }
     }
 
     fun inscribirseEvento(evento: Evento) {
         if (!(evento in eventoInscritos)) {
             eventoInscritos.add(evento)
             evento.usuarioInscrito.add(this)
-            println("${Id_Usuario} se ha inscrito en el evento ${evento.Nombre}")
+            println("${Id_Usuario} se ha inscrito en el evento ${evento.Id_Evento}")
         } else {
             println("${Id_Usuario} ya está inscrito en este evento")
         }
@@ -46,7 +59,7 @@ class Usuario {
         if(evento in eventoInscritos){
             eventoInscritos.remove(evento)
             evento.usuarioInscrito.remove(this)
-            println("$Id_Usuario ha cancelado su inscripcion al evento ${evento.Nombre}")
+            println("$Id_Usuario ha cancelado su inscripcion al evento ${evento.Id_Evento}")
         } else {
             println("$Id_Usuario no estaba inscrito en este vento")
         }
@@ -56,7 +69,7 @@ class Usuario {
         if(evento in eventoInscritos){
             eventosAsistidos.add(evento)
             evento.usuarioAsistentes.add(this)
-            println("$Id_Usuario ha confirmado su asistencia al evento ${evento.Nombre}")
+            println("$Id_Usuario ha confirmado su asistencia al evento ${evento.Id_Evento}")
         }
     }
 }
